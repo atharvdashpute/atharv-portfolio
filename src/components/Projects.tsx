@@ -25,6 +25,27 @@ const projectsData = [
     tech: ["React.js", "OpenWeather API", "CSS"],
     link: "#",
   },
+  {
+    title: "AI-Enhanced Career Guidance System",
+    description:
+      "A web-based AI career guidance system integrating machine learning and chatbot interaction to deliver tailored career suggestions based on user input.",
+    tech: ["Python", "Machine Learning", "Chatbot", "AI"],
+    link: "https://atharvdashpute.github.io/Ai-Enhanced-Carrier-Guidelnce-System/",
+  },
+  {
+    title: "Car Racing Game",
+    description:
+      "A high-speed racing experience with thrilling tracks, responsive controls, and a sleek arcade-style design.",
+    tech: ["JavaScript", "HTML5", "Canvas", "Game Dev"],
+    link: "https://atharvdashpute.github.io/Car-racing-game/",
+  },
+  {
+    title: "Coming Soon",
+    description:
+      "New exciting project in development. Stay tuned for updates!",
+    tech: ["TBA"],
+    link: "#",
+  },
 ];
 
 const Projects = () => {
@@ -53,7 +74,11 @@ const Projects = () => {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between text-card-foreground">
                   <span>{project.title}</span>
-                  <ExternalLink className="w-5 h-5 text-accent" />
+                  {project.link !== "#" && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-5 h-5 text-accent hover:text-accent/80 transition-colors" />
+                    </a>
+                  )}
                 </CardTitle>
               </CardHeader>
               <CardContent>
