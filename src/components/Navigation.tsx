@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -46,7 +47,7 @@ const Navigation = () => {
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
               <button
                 key={item.href}
@@ -56,11 +57,45 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <ThemeToggle />
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.instagram.com/atharv_.4496/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-accent hover:scale-110 transition-all duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.threads.com/@atharv_.4496"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-accent hover:scale-110 transition-all duration-300"
+              >
+                <FaXTwitter className="w-5 h-5" />
+              </a>
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="flex items-center gap-2 md:hidden">
+            <a
+              href="https://www.instagram.com/atharv_.4496/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.threads.com/@atharv_.4496"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-accent transition-colors"
+            >
+              <FaXTwitter className="w-5 h-5" />
+            </a>
             <ThemeToggle />
             <Button
               variant="ghost"
