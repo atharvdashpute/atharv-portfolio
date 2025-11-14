@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
@@ -76,23 +77,39 @@ const Hero = () => {
                 href="https://github.com/atharvdashpute"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-all shadow-soft hover:shadow-medium"
+                className="group relative p-3 rounded-full bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300"
               >
-                <Github className="w-6 h-6" />
+                <Github className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
               </a>
               <a
                 href="https://linkedin.com/in/atharv-dashpute-94bba8257"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-all shadow-soft hover:shadow-medium"
+                className="group relative p-3 rounded-full bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300"
               >
-                <Linkedin className="w-6 h-6" />
+                <Linkedin className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
+              </a>
+              <a
+                href="https://www.instagram.com/atharv_.4496/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative p-3 rounded-full bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300"
+              >
+                <Instagram className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
+              </a>
+              <a
+                href="https://www.threads.com/@atharv_.4496?xmt=AQF0ObfqahFGNxDULNlkE-Ym03u5l72pQZcs4VcFkSOfLBo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative p-3 rounded-full bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300"
+              >
+                <FaXTwitter className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
               </a>
               <a
                 href="mailto:dashputeatharv@gmail.com"
-                className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-all shadow-soft hover:shadow-medium"
+                className="group relative p-3 rounded-full bg-gradient-to-br from-secondary to-secondary/80 text-secondary-foreground hover:scale-110 hover:shadow-glow transition-all duration-300"
               >
-                <Mail className="w-6 h-6" />
+                <Mail className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
               </a>
             </div>
           </div>
