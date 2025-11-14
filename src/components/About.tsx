@@ -19,14 +19,10 @@ const About = () => {
         </h2>
         <div className="bg-card rounded-lg p-8 shadow-medium border border-border hover:shadow-glow transition-all duration-300">
           <p className="text-lg text-card-foreground leading-relaxed">
-            I'm a passionate Full Stack Developer skilled in designing, developing, and deploying
-            scalable web applications using the MERN stack. I enjoy building responsive interfaces,
-            optimizing backend APIs, and deploying full-stack projects on modern cloud platforms.
+            I am a Full-Stack developer based in India. I am an Electronics and Telecommunication undergraduate from DBATU. I'm passionate about full-stack development, seamlessly blending front-end and back-end technologies. Beyond the conventional. My problem-solving approach and commitment to continuous learning define my journey. Explore my portfolio for a glimpse into my dynamic projects, and let's connect to explore the exciting intersections of innovation and technology.
           </p>
           <p className="text-lg text-card-foreground leading-relaxed mt-4">
-            I focus on writing clean, maintainable code and creating impactful digital experiences.
-            My expertise spans across frontend technologies like React.js, backend development with
-            Node.js and Express.js, and database management with MongoDB and MySQL.
+            I focus on writing clean, maintainable code and creating impactful digital experiences. My expertise spans across frontend technologies like React.js, backend development with Node.js and Express.js, and database management with MongoDB and MySQL.
           </p>
         </div>
       </div>

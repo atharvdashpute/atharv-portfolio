@@ -5,7 +5,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "Full Stack Developer | MERN | Java | Cloud";
+  const fullText = "Full Stack Developer | Software Developer | MERN | Java | Cloud";
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(100);

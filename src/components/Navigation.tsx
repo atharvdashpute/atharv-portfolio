@@ -42,7 +42,7 @@ const Navigation = () => {
             href="#"
             className="text-2xl font-bold text-foreground hover:text-accent transition-colors"
           >
-            AD
+            Atharv
           </a>
 
           {/* Desktop Menu */}
