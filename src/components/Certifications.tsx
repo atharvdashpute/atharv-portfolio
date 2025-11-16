@@ -74,18 +74,28 @@ const Certifications = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificationsData.map((cert, index) => (
-            <div
-              key={index}
-              className ="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
-            >
-              <a
-  href={cert.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-accent hover:text-accent/80 transition"
->
-  <ExternalLink className="w-4 h-4" />
-</a>
+  <a 
+    key={index}
+    href={cert.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-card rounded-lg p-6 shadow-medium border border-border 
+               hover:shadow-glow transition-all duration-300 transform 
+               hover:-translate-y-1"
+  >
+    <div className="flex flex-col items-center text-center">
+      <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
+        <Award className="w-8 h-8 text-accent" />
+      </div>
+      <h3 className="text-lg font-semibold text-card-foreground mb-2">
+        {cert.title}
+      </h3>
+      <p className="text-muted-foreground mb-1">{cert.issuer}</p>
+      <span className="text-sm text-accent font-medium">{cert.year}</span>
+    </div>
+  </a>
+))}
+
              
               <div className="flex flex-col items-center text-center">
                 <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
