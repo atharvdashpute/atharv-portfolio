@@ -16,7 +16,7 @@ const projectsData = [
     description:
       "Built blogging platform with authentication, CRUD operations, and background jobs. Implemented admin dashboard and comment system.",
     tech: ["Ruby on Rails", "PostgreSQL", "Devise"],
-    link: "#",
+    link: "https://health-hub-connect.netlify.app/",
   },
   {
     title: "Weather Forecast App",
@@ -76,7 +76,7 @@ const Projects = () => {
                   <span>{project.title}</span>
                   {project.link !== "#" && (
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-5 h-5 text-accent hover:text-accent/80 transition-colors" />
+                      <ExternalLink className="w-5 h-5 text-accent-foreground hover:text-accent transition-colors" />
                     </a>
                   )}
                 </CardTitle>
