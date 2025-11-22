@@ -9,21 +9,21 @@ const projectsData = [
     description:
       "Developed full-stack portal for managing patients, doctors, and appointments. Integrated JWT authentication and RESTful APIs for secure data exchange.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-    link: "https://health-hub-connect.netlify.app/",
+    link: "https://health-hub-connectt.netlify.app/",
   },
   {
     title: "Mini Blogging Platform",
     description:
       "Built blogging platform with authentication, CRUD operations, and background jobs. Implemented admin dashboard and comment system.",
     tech: ["Ruby on Rails", "PostgreSQL", "Devise"],
-    link: "https://health-hub-connect.netlify.app/",
+    link: "#",
   },
   {
-    title: "Weather Forecast App",
+    title: "car-connect",
     description:
-      "Built responsive app fetching real-time data using REST API and dynamic React UI with beautiful visualizations.",
+      "Car-Connect is a modern car-selling platform that lets users browse cars, view details, and save favorites with a clean, responsive UI.",
     tech: ["React.js", "OpenWeather API", "CSS"],
-    link: "#",
+    link: "https://car-conect.netlify.app/",
   },
   {
     title: "AI-Enhanced Career Guidance System",
@@ -39,13 +39,7 @@ const projectsData = [
     tech: ["JavaScript", "HTML5", "Canvas", "Game Dev"],
     link: "https://atharvdashpute.github.io/Car-racing-game/",
   },
-  {
-    title: "Coming Soon",
-    description:
-      "New exciting project in development. Stay tuned for updates!",
-    tech: ["TBA"],
-    link: "#",
-  },
+  
 ];
 
 const Projects = () => {
